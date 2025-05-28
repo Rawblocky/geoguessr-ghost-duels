@@ -485,6 +485,7 @@ function checkIfDetailHandled(detail, array) {
 function onUrlChange() {
 	trackedRoundStarts = {};
 	trackedRoundEnds = {};
+	stopMusic();
 }
 
 const observer = new MutationObserver((mutations) => {
