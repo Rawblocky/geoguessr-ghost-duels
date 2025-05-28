@@ -2,7 +2,7 @@
 // @name        Ghost Duels (GeoGuessr)
 // @namespace   https://github.com/rawblocky/geoguessr-ghost-duels
 // @match       *://*.geoguessr.com/*
-// @version     2025.05.28
+// @version     2025.05.28.01
 // @author      Rawblocky
 // @description Play simulated Duel games aganist a player's past guesses in supported Ghost Duels maps
 // @icon        https://www.geoguessr.com/images/resize:auto:48:48/gravity:ce/plain/avatarasseticon/153d31615ba2a48efffcb00e5186b9b1.webp
@@ -24,9 +24,10 @@ let musicVolume = 0;
 // Music packs: Duels, DuelsOld, BattleRoyale
 let musicPack = "Duels";
 
-// Guess selection: random, best, worst
-// If the guess was from a duels game, should it be using the best or worst guess from that round?
-let duelsGuessSelection = "best";
+// Guess selection: random, best, worst, fastest, slowest
+// Alters which guess it should use during matchups aganist Duels locations
+// default: fastest
+let duelsGuessSelection = "fastest";
 
 let defaultHealthSelf = 6000;
 let defaultHealthGhost = 6000;
@@ -393,13 +394,11 @@ async function getGhostDataFromDetail(detail) {
 		let roundStartTime = getTimeFromEpoch(
 			ghostGameInfo.rounds[ghostGameStats.roundNumber].startTime
 		);
-		let useBestGuess =
-			duelsGuessSelection == "best" ||
-			guessSelectionCache[panoId] ||
-			(duelsGuessSelection != "worst" &&
-				guessSelectionCache[panoId] == null &&
-				Math.random() <= 0.5);
-		guessSelectionCache[panoId] = useBestGuess;
+		let guessType = guessSelectionCache[panoId] || duelsGuessSelection;
+		if (guessType == "random") {
+			(Math.random() <= 0.5 && "best") || "worst";
+		}
+		guessSelectionCache[panoId] = guessType;
 		for (const team of Object.values(ghostGameInfo.teams)) {
 			for (const ghostPlayer of Object.values(team.players)) {
 				for (const ghostGuess of Object.values(ghostPlayer.guesses)) {
@@ -411,9 +410,14 @@ async function getGhostDataFromDetail(detail) {
 						continue;
 					}
 					let distance = ghostGuess.distance;
+					let newTimeToGuess =
+						getTimeFromEpoch(ghostGuess.created) - roundStartTime;
 					if (
-						(ghostDistance && useBestGuess && distance > ghostDistance) ||
-						(ghostDistance && !useBestGuess && ghostDistance > distance)
+						ghostDistance &&
+						((guessType == "best" && distance > ghostDistance) ||
+							(guessType == "worst" && ghostDistance > distance) ||
+							(guessType == "fastest" && newTimeToGuess > timeToGuess) ||
+							(guessType == "slowest" && newTimeToGuess < timeToGuess))
 					) {
 						continue;
 					}
@@ -424,7 +428,7 @@ async function getGhostDataFromDetail(detail) {
 					ghostDistance = distance;
 					ghostPlayerId = ghostPlayer.playerId;
 					ghostNick = ghostPlayer.playerId;
-					timeToGuess = getTimeFromEpoch(ghostGuess.created) - roundStartTime;
+					timeToGuess = newTimeToGuess;
 				}
 			}
 		}
@@ -477,8 +481,30 @@ function checkIfDetailHandled(detail, array) {
 	return false;
 }
 
+// reset cache on URL change to allow repeat rounds
+function onUrlChange() {
+	trackedRoundStarts = {};
+	trackedRoundEnds = {};
+}
+
+const observer = new MutationObserver((mutations) => {
+	for (let mutation of mutations) {
+		if (mutation.type === "childList") {
+			if (window.location.href !== previousUrl) {
+				previousUrl = window.location.href;
+				onUrlChange();
+			}
+		}
+	}
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+let previousUrl = window.location.href;
+
 GeoGuessrEventFramework.init().then(async (GEF) => {
 	let eventsFired = 0;
+	let eventsFired_URL;
 	const handleStartEvent = async (event) => {
 		let detail = event.detail;
 		if (checkIfDetailHandled(detail, trackedRoundStarts)) {
@@ -513,7 +539,16 @@ GeoGuessrEventFramework.init().then(async (GEF) => {
 		}
 
 		let currentEventsFired = eventsFired + 1;
+		let currentURL = window.location.href;
 		eventsFired = currentEventsFired;
+		eventsFired_URL = currentURL;
+
+		function getIsConnected() {
+			return (
+				eventsFired == currentEventsFired &&
+				eventsFired_URL == window.location.href
+			);
+		}
 
 		let isHealingRound = ghostDuel_roundNumber == healingRoundNumber;
 
@@ -562,7 +597,8 @@ GeoGuessrEventFramework.init().then(async (GEF) => {
 			Math.min(ghostGameData.timeToGuess, timeLimit) + timeAfterGuess;
 		let playedSound = false;
 		while (timeLeft > 0) {
-			if (currentEventsFired != eventsFired) {
+			if (!getIsConnected()) {
+				console.log("Disconnected");
 				return;
 			}
 			let canShowTimer =
@@ -583,12 +619,12 @@ GeoGuessrEventFramework.init().then(async (GEF) => {
 			let rawDelay = await delay(100);
 			timeLeft -= rawDelay / 1000;
 		}
-		if (currentEventsFired != eventsFired) {
+		if (!getIsConnected()) {
 			return;
 		}
 		textTable[
 			textTable.length - 1
-		] = `<span style="font-size: 4rem">Time's up!</span>`;
+		] = `<span style="font-size: 4rem; ${orangeTextShadow}">Time's up!</span>`;
 		setStatusText(textTable);
 	};
 	GEF.events.addEventListener("game_start", handleStartEvent);
@@ -703,7 +739,9 @@ GeoGuessrEventFramework.init().then(async (GEF) => {
 		let bottomText = [
 			// Opponent
 			displaySettings.results.showOpponent &&
-				`<span style="opacity: 0.5; font-size: 1rem">${ghostGameData.ghostNick}</span>`,
+				`<span style="opacity: 0.5; font-size: 1rem">${
+					ghostGameData.ghostNick
+				} (${Math.floor(ghostGameData.timeToGuess * 1000) / 1000} s)</span>`,
 			// Round number
 			displaySettings.results.showRoundNumber &&
 				`<span style="opacity: 0.5; font-size: 1rem">Round ${ghostDuel_roundNumber}</span>`,
