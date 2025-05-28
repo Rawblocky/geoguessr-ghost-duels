@@ -81,7 +81,7 @@ You can adjust different variables at the top of the script.
   <tr>
     <td>multiplierIncrease</td>
     <td>number, Default: <b>0.5</b></td>
-    <td>The increment of how much the multiplier after increases every round</td>
+    <td>The increment of how much the multiplier increases after every round when multipliers are active</td>
   </tr>
   <tr>
     <td>roundsWithoutMultiplier</td>
