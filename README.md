@@ -4,6 +4,8 @@ Play simulated GeoGuessr Duel games aganist a random player's past guesses
 
 <b>[Install script](https://github.com/Rawblocky/BadGuessr/raw/master/main.user.js)</b>
 
+https://github.com/user-attachments/assets/99cc5e3b-ed41-4488-8b5e-5be4ce1c5284
+
 If you want to reset the scores, refresh the page
 
 When the ghost opponent guesses and the timer expires, your guess will not auto-lock; you need to manually place the guess
