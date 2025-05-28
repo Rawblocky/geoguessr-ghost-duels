@@ -2,7 +2,7 @@
 
 Play simulated GeoGuessr Duel games aganist a random player's past guesses
 
-# <b><p align=center>[Install script](https://github.com/Rawblocky/geoguessr-ghost-duels/raw/master/main.user.js) • [Maps](https://github.com/rawblocky/geoguessr-ghost-duels?tab=readme-ov-file#maps)</p></b>
+# <b><p align=center>[Install script](https://raw.githubusercontent.com/Rawblocky/geoguessr-ghost-duels/refs/heads/main/main.user.js) • [Maps](https://github.com/rawblocky/geoguessr-ghost-duels?tab=readme-ov-file#maps)</p></b>
 
 https://github.com/user-attachments/assets/99cc5e3b-ed41-4488-8b5e-5be4ce1c5284
 
