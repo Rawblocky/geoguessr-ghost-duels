@@ -14,9 +14,66 @@ When the ghost opponent guesses and the timer expires, your guess will not auto-
 
 # Maps
 
-Currently, there is only one map, but I'll add more maps based on elo ranges and gamemode in the future
+_last updated 2025-05-59_
 
-- <b>[All locations](https://www.geoguessr.com/maps/682f9c642e0faf21e0cb31a9)</b>
+<table>
+  <tr>
+    <th>Map name</th>
+    <th>Location count</th>
+    <th>Rating</th>
+    <th>Moving</th>
+	<th>No move</th>
+    <th>NMPZ</th>
+  </tr>
+  <tr>
+    <td><a href=https://www.geoguessr.com/maps/682f9c642e0faf21e0cb31a9>All locations</a></td>
+    <td>28,809</b></td>
+    <td>Any</b></td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>✔️</td>
+  </tr>
+  <tr>
+    <td><a href=https://www.geoguessr.com/maps/6838e434ed10680ff0e42735>No move only</a></td>
+    <td>14,028</b></td>
+    <td>Any</b></td>
+    <td>❌</td>
+    <td>✔️</td>
+    <td>️❌</td>
+  </tr>
+  <tr>
+    <td><a href=https://www.geoguessr.com/maps/6838e396013e44210abcbed5>NMPZ only</a></td>
+    <td>1,785</b></td>
+    <td>Any</b></td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✔️️</td>
+  </tr>
+  <tr>
+    <td><a href=https://www.geoguessr.com/maps/6838e4528b10e17a36d0ef20>0-749 Rating</a></td>
+    <td>2,066</b></td>
+    <td>0 - 749, Bronze, Silver</b></td>
+    <td>✔️</td>
+    <td>✔️️</td>
+    <td>❌️️</td>
+  </tr>
+  <tr>
+    <td><a href=https://www.geoguessr.com/maps/6838e45eed10680ff0e427c6>750-999 Rating</a></td>
+    <td>4,610</b></td>
+    <td>750 - 999</b></td>
+    <td>❌️️</td>
+    <td>✔️️</td>
+    <td>✔️️</td>
+  </tr>
+  <tr>
+    <td><a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d>1000+ Rating</a></td>
+    <td>5,178</b></td>
+    <td>1,000+</b></td>
+    <td>❌️️</td>
+    <td>✔️️</td>
+    <td>✔️️</td>
+  </tr>
+</table>
 
 ## Coverage
 
@@ -33,6 +90,8 @@ Only maps that are either verified by GeoGuessr, made by certain map creators, o
 All past guesses are collected from the "Friend Activity" page in GeoGuessr who have "Share my activity with friends" turned on
 
 [Help contribute your guesses by adding me on GeoGuessr](https://www.geoguessr.com/user/67a2f967034dd50f2b2e43c3)
+
+Note that GeoGuessr only tracks games after adding me (anything before isn't tracked)
 
 # Documentation
 
