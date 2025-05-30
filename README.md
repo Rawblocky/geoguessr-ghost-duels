@@ -20,7 +20,7 @@ _last updated 2025-05-59_
   <tr>
     <th>Map name</th>
     <th>Location count</th>
-    <th>Rating</th>
+    <th>Notes</th>
     <th>Moving</th>
 	<th>No move</th>
     <th>NMPZ</th>
@@ -28,15 +28,24 @@ _last updated 2025-05-59_
   <tr>
     <td><a href=https://www.geoguessr.com/maps/682f9c642e0faf21e0cb31a9>All locations</a></td>
     <td>28,809</b></td>
-    <td>Any</b></td>
+    <td></b>N/A</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>✔️</td>
   </tr>
   <tr>
+    <td><a href=https://www.geoguessr.com/maps/683910148f1dc66a7582a5f5>Rural locations</a></td>
+    <td>2,819</b></td>
+	<td>Rural locations only, validated using <a href=https://github.com/slashP/Vali>Vali</a></td>
+    <td>❌️</td>
+    <td>✔️</td>
+    <td>✔️</td>
+  </tr>
+  </tr>
+  <tr>
     <td><a href=https://www.geoguessr.com/maps/6838f47e394665c20c001f53>Moving only</a></td>
     <td>4,186</b></td>
-    <td>Any</b></td>
+    <td>Moving games only</b></td>
     <td>✔️</td>
     <td>❌</td>
     <td>️❌</td>
@@ -44,7 +53,7 @@ _last updated 2025-05-59_
   <tr>
     <td><a href=https://www.geoguessr.com/maps/6838e434ed10680ff0e42735>No move only</a></td>
     <td>14,028</b></td>
-    <td>Any</b></td>
+    <td>No Move games only</b></td>
     <td>❌</td>
     <td>✔️</td>
     <td>️❌</td>
@@ -52,15 +61,23 @@ _last updated 2025-05-59_
   <tr>
     <td><a href=https://www.geoguessr.com/maps/6838e396013e44210abcbed5>NMPZ only</a></td>
     <td>1,785</b></td>
-    <td>Any</b></td>
+    <td>NMPZ games only</b></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️️</td>
   </tr>
   <tr>
+    <td><a href=https://www.geoguessr.com/maps/6839122a2e76d9f2c26bbb10>Bronze + Silver</a></td>
+    <td>2,066</b></td>
+	<td>Bronze and Silver players only<br>Only includes <a href=https://www.geoguessr.com/maps/66014417ff2366aa9a7504df>The World</a> map</td>
+    <td>✔️</td>
+    <td>❌️</td>
+    <td>❌️️</td>
+  </tr>
+  <tr>
     <td><a href=https://www.geoguessr.com/maps/6838e4528b10e17a36d0ef20>0-749 Rating</a></td>
     <td>2,066</b></td>
-    <td>0 - 749, Bronze, Silver</b></td>
+    <td>0 - 749 rating only</td>
     <td>✔️</td>
     <td>✔️️</td>
     <td>❌️️</td>
@@ -68,7 +85,7 @@ _last updated 2025-05-59_
   <tr>
     <td><a href=https://www.geoguessr.com/maps/6838e45eed10680ff0e427c6>750-999 Rating</a></td>
     <td>4,610</b></td>
-    <td>750 - 999</b></td>
+    <td>750 - 999 rating only</b></td>
     <td>❌️️</td>
     <td>✔️️</td>
     <td>✔️️</td>
@@ -76,7 +93,7 @@ _last updated 2025-05-59_
   <tr>
     <td><a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d>1000+ Rating</a></td>
     <td>5,178</b></td>
-    <td>1,000+</b></td>
+    <td>1,000+ rating only</b></td>
     <td>❌️️</td>
     <td>✔️️</td>
     <td>✔️️</td>
@@ -87,11 +104,17 @@ _last updated 2025-05-59_
 
 ### Duel guesses
 
-All Duel games, besides ones placed in "The World" or "World", are tracked
+All Duel games, besides ones played in [The World](https://www.geoguessr.com/maps/66014417ff2366aa9a7504df) or [World](https://www.geoguessr.com/maps/world), are tracked
+
+The exception is the Bronze + Silver map, which'll only contain The World
 
 ### Classic game guesses
 
 Only maps that are either verified by GeoGuessr, made by certain map creators, or is personally added to the database by me are allowed to show up. Note that some maps are banned (ex. Maps by GeoGuessr, maps that have a lot of unofficial coverage, etc.)
+
+### Party games
+
+Games played in parties are not tracked.
 
 # Contribute guesses
 
@@ -214,7 +237,8 @@ It'll then grab that map's CSV file, which is also just multiple lines only usin
 i'm someone who isn't too experienced with JS / web development, so thanks to these people for making life easier:
 
 - [miraclewhips](https://miraclewhips.dev) for [geoguessr-event-framework](https://github.com/miraclewhips/geoguessr-event-framework), [World Score Reference](https://miraclewhips.dev/#world-score-reference), and a lot of open source scripts I could look at and learn/take from
-- tyow for [Guess retriever](https://greasyfork.org/en/scripts/482055-guess-retriever) (using a modified version for the database)
+- slashP for creating [Vali](https://github.com/slashP/Vali) (used for the "Rural locations" map)
+- tyow for [Guess retriever](https://greasyfork.org/en/scripts/482055-guess-retriever) (initally used to source data for the project; swapped to a custom version to make it easier to upload different map types)
 - [LearnableMeta](https://learnablemeta.com/) for it initially being used to display only scores (and got me to start playing GeoGuessr)
 
 and everyone who added me on GeoGuessr for helping with this project
