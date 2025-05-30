@@ -10,8 +10,8 @@
 // @grant       unsafeWindow
 // @require     https://miraclewhips.dev/geoguessr-event-framework/geoguessr-event-framework.min.js
 // @require     https://update.greasyfork.org/scripts/460322/1408713/Geoguessr%20Styles%20Scan.js
-// @downloadURL https://github.com/Rawblocky/geoguessr-ghost-duels/raw/master/main.user.js
-// @updateURL   https://github.com/Rawblocky/geoguessr-ghost-duels/raw/master/main.meta.js
+// @downloadURL https://raw.githubusercontent.com/Rawblocky/geoguessr-ghost-duels/refs/heads/main/main.user.js
+// @updateURL   https://raw.githubusercontent.com/Rawblocky/geoguessr-ghost-duels/refs/heads/main/main.meta.js
 // ==/UserScript==
 
 // ####################################
