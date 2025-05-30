@@ -486,6 +486,7 @@ function onUrlChange() {
 	trackedRoundStarts = {};
 	trackedRoundEnds = {};
 	stopMusic();
+	removeOldImageOverlay();
 }
 
 const observer = new MutationObserver((mutations) => {
