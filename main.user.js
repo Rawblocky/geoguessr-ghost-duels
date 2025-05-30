@@ -2,7 +2,7 @@
 // @name        Ghost Duels (GeoGuessr)
 // @namespace   https://github.com/rawblocky/geoguessr-ghost-duels
 // @match       *://*.geoguessr.com/*
-// @version     2025.05.29.00
+// @version     2025.05.29.01
 // @author      Rawblocky
 // @description Play simulated Duel games aganist a player's past guesses in supported Ghost Duels maps
 // @icon        https://www.geoguessr.com/images/resize:auto:48:48/gravity:ce/plain/avatarasseticon/153d31615ba2a48efffcb00e5186b9b1.webp
