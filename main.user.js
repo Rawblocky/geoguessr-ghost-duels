@@ -2,7 +2,7 @@
 // @name        Ghost Duels (GeoGuessr)
 // @namespace   https://github.com/rawblocky/geoguessr-ghost-duels
 // @match       *://*.geoguessr.com/*
-// @version     2025.05.29.01
+// @version     2025.05.29.02
 // @author      Rawblocky
 // @description Play simulated Duel games aganist a player's past guesses in supported Ghost Duels maps
 // @icon        https://www.geoguessr.com/images/resize:auto:48:48/gravity:ce/plain/avatarasseticon/153d31615ba2a48efffcb00e5186b9b1.webp
@@ -570,18 +570,18 @@ GeoGuessrEventFramework.init().then(async (GEF) => {
 				`<span style="font-size: 2.5rem">${ghostDuel_healthSelf}&nbsp;&nbsp;&nbsp;&nbsp;${ghostDuel_healthGhost}</span>`,
 			// Opponent
 			displaySettings.inGame.showOpponent &&
-				`<span style="opacity: 0.5; font-size: 1rem"><a href="https://www.geoguessr.com/user/${ghostGameData.ghostPlayerId}" target="_blank">${ghostGameData.ghostNick}</a></span>`,
+				`<span style="opacity: 0.5; font-size: 14px"><a href="https://www.geoguessr.com/user/${ghostGameData.ghostPlayerId}" target="_blank">${ghostGameData.ghostNick}</a></span>`,
 			// Round number
 			displaySettings.inGame.showRoundNumber &&
-				`<span style="opacity: 0.5; font-size: 1rem">Round ${ghostDuel_roundNumber}</span>`,
+				`<span style="opacity: 0.5; font-size: 14px">Round ${ghostDuel_roundNumber}</span>`,
 			// GameMode
 			displaySettings.inGame.showGameMode &&
-				`<span style="opacity: 0.5; font-size: 1rem">${formatTextWithSpaces(
+				`<span style="opacity: 0.5; font-size: 14px">${formatTextWithSpaces(
 					ghostGameData.gameMode
 				)}</span>`,
 			// Map name
 			displaySettings.inGame.showMapName &&
-				`<span style="opacity: 0.5; font-size: 1rem"><a href="https://www.geoguessr.com/maps/${ghostGameData.mapId}" target="_blank">${ghostGameData.mapName}</a></span>`,
+				`<span style="opacity: 0.5; font-size: 14px"><a href="https://www.geoguessr.com/maps/${ghostGameData.mapId}" target="_blank">${ghostGameData.mapName}</a></span>`,
 			// Multiplier
 			(displaySettings.inGame.showMultiplier &&
 				ghostDuel_multiplier != 1 &&
@@ -743,23 +743,23 @@ GeoGuessrEventFramework.init().then(async (GEF) => {
 		let bottomText = [
 			// Opponent
 			displaySettings.results.showOpponent &&
-				`<span style="opacity: 0.5; font-size: 1rem">${
+				`<span style="opacity: 0.5; font-size: 14px">${
 					ghostGameData.ghostNick
 				} (${Math.floor(ghostGameData.timeToGuess * 1000) / 1000} s)</span>`,
 			// Round number
 			displaySettings.results.showRoundNumber &&
-				`<span style="opacity: 0.5; font-size: 1rem">Round ${ghostDuel_roundNumber}</span>`,
+				`<span style="opacity: 0.5; font-size: 14px">Round ${ghostDuel_roundNumber}</span>`,
 			// GameMode
 			displaySettings.results.showGameMode &&
-				`<span style="opacity: 0.5; font-size: 1rem">${formatTextWithSpaces(
+				`<span style="opacity: 0.5; font-size: 14px">${formatTextWithSpaces(
 					ghostGameData.gameMode
 				)}</span>`,
 			// Map name
 			displaySettings.results.showMapName &&
-				`<span style="opacity: 0.5; font-size: 1rem"><a href="https://www.geoguessr.com/maps/${ghostGameData.mapId}" target="_blank">${ghostGameData.mapName}</a></span>`,
+				`<span style="opacity: 0.5; font-size: 14px"><a href="https://www.geoguessr.com/maps/${ghostGameData.mapId}" target="_blank">${ghostGameData.mapName}</a></span>`,
 			// Breakdown / Replays
 			displaySettings.results.showBreakdownAndReplayLink &&
-				`<span style="opacity: 0.5; font-size: 1rem">${ghostGameData.breakdownText}</span>`,
+				`<span style="opacity: 0.5; font-size: 14px">${ghostGameData.breakdownText}</span>`,
 		];
 		for (const text of Object.values(bottomText)) {
 			statusText[statusText.length] = text;
@@ -971,13 +971,16 @@ function setStatusText(textOrArray) {
 	  text-align: center;
 	  margin: 5px;
 	  position: absolute;
-	  top: 3.5rem; /* Changed from 20px to 3.5rem */
+	  top: 3.5rem;
 	  left: 50%;
-	  transform: translateX(-50%); /* Center the text horizontally */
+	  transform: translateX(-50%);
 	  z-index: 1000;
 	  text-shadow: 0 0.0625rem 0.125rem var(--ds-color-purple-100);
 	  user-select: none;
-	  text-transform: ${(displaySettings.useUppercaseText && "uppercase") || "none"}
+	  text-transform: ${
+			(displaySettings.useUppercaseText && "uppercase") || "none"
+		},
+	   pointer-events: none;
 	`;
 	div.innerHTML = text;
 
