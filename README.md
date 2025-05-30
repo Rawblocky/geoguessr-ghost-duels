@@ -27,7 +27,7 @@ _last updated 2025-05-59_
   </tr>
   <tr>
     <td><a href=https://www.geoguessr.com/maps/682f9c642e0faf21e0cb31a9>All locations</a></td>
-    <td>28,809</b></td>
+    <td>19,999</b></td>
     <td></b>N/A</td>
     <td>✔️</td>
     <td>✔️</td>
@@ -35,11 +35,19 @@ _last updated 2025-05-59_
   </tr>
   <tr>
     <td><a href=https://www.geoguessr.com/maps/683910148f1dc66a7582a5f5>Rural locations</a></td>
-    <td>2,819</b></td>
+    <td>2,630</b></td>
 	<td>Rural locations only, validated using <a href=https://github.com/slashP/Vali>Vali</a></td>
     <td>❌️</td>
     <td>✔️</td>
     <td>✔️</td>
+  </tr>
+    <th>Maps by type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  <tr>
   </tr>
   </tr>
   <tr>
@@ -66,9 +74,17 @@ _last updated 2025-05-59_
     <td>❌</td>
     <td>✔️️</td>
   </tr>
+  </tr>
+    <th>Maps by rating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  <tr>
   <tr>
     <td><a href=https://www.geoguessr.com/maps/6839122a2e76d9f2c26bbb10>Bronze + Silver</a></td>
-    <td>2,066</b></td>
+    <td>2,630</b></td>
 	<td>Bronze and Silver players only<br>Only includes <a href=https://www.geoguessr.com/maps/66014417ff2366aa9a7504df>The World</a> map</td>
     <td>✔️</td>
     <td>❌️</td>
