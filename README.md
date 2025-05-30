@@ -16,6 +16,8 @@ When the ghost opponent guesses and the timer expires, your guess will not auto-
 
 _last updated 2025-05-59_
 
+## Maps by location types
+
 <table>
   <tr>
     <th>Map name</th>
@@ -40,13 +42,18 @@ _last updated 2025-05-59_
     <td>❌️</td>
     <td>✔️</td>
     <td>✔️</td>
+</table>
+
+## Maps by mode
+
+<table>
   </tr>
-    <th>Maps by type</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Map name</th>
+    <th>Location count</th>
+    <th>Notes</th>
+    <th>Moving</th>
+	<th>No move</th>
+    <th>NMPZ</th>
   <tr>
   </tr>
   </tr>
@@ -74,13 +81,19 @@ _last updated 2025-05-59_
     <td>❌</td>
     <td>✔️️</td>
   </tr>
+</table>
+
+## Maps by ranks
+
+<table>
+
   </tr>
-    <th>Maps by rating</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Map name</th>
+    <th>Location count</th>
+    <th>Notes</th>
+    <th>Moving</th>
+	<th>No move</th>
+    <th>NMPZ</th>
   <tr>
   <tr>
     <td><a href=https://www.geoguessr.com/maps/6839122a2e76d9f2c26bbb10>Bronze + Silver</a></td>
