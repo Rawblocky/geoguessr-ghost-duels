@@ -34,6 +34,14 @@ _last updated 2025-05-59_
     <td>✔️</td>
   </tr>
   <tr>
+    <td><a href=https://www.geoguessr.com/maps/6838f47e394665c20c001f53>Moving only</a></td>
+    <td>4,186</b></td>
+    <td>Any</b></td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>️❌</td>
+  </tr>
+  <tr>
     <td><a href=https://www.geoguessr.com/maps/6838e434ed10680ff0e42735>No move only</a></td>
     <td>14,028</b></td>
     <td>Any</b></td>
