@@ -14,7 +14,7 @@ When the ghost opponent guesses and the timer expires, your guess will not auto-
 
 # Maps
 
-_last updated 2025-05-59_
+_last updated 2025-05-29_
 
 ## Maps by location types
 
