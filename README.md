@@ -1,10 +1,10 @@
-# Ghost Duels (beta)
+# Ghost Duels
 
-Play simulated GeoGuessr Duel games aganist a random player's past guesses
-
-# <b><p align=center>[Install script](https://raw.githubusercontent.com/Rawblocky/geoguessr-ghost-duels/refs/heads/main/main.user.js) • [Maps](https://github.com/rawblocky/geoguessr-ghost-duels?tab=readme-ov-file#maps)</p></b>
+Play a simulated Duels game aganist a random player's past guess inside single player!
 
 https://github.com/user-attachments/assets/99cc5e3b-ed41-4488-8b5e-5be4ce1c5284
+
+# <b>[Install script](https://raw.githubusercontent.com/Rawblocky/geoguessr-ghost-duels/refs/heads/main/main.user.js)<br>[Maps](https://github.com/rawblocky/geoguessr-ghost-duels#maps)</b>
 
 # Notes
 
@@ -14,30 +14,31 @@ When the ghost opponent guesses and the timer expires, your guess will not auto-
 
 # Maps
 
-_last updated 2025-05-29_
+_Click on a map name to play!_
 
 ## Maps by location types
 
 <table>
   <tr>
-    <th>Map name</th>
-    <th>Location count</th>
+    <th>Map link</th>
     <th>Notes</th>
     <th>Moving</th>
 	<th>No move</th>
     <th>NMPZ</th>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/682f9c642e0faf21e0cb31a9>All locations</a></td>
-    <td>19,999</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/682f9c642e0faf21e0cb31a9><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F682f9c642e0faf21e0cb31a9&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=All&color=393273&labelColor=7950e5&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td></b>N/A</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>✔️</td>
   </tr>
-  <tr>
-    <td><a href=https://www.geoguessr.com/maps/683910148f1dc66a7582a5f5>Rural locations</a></td>
-    <td>2,630</b></td>
+<tr>
+	<td>
+	<a href=https://www.geoguessr.com/maps/683910148f1dc66a7582a5f5><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F683910148f1dc66a7582a5f5&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=rural%20only&color=372d23&labelColor=92785f&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
 	<td>Rural locations only, validated using <a href=https://github.com/slashP/Vali>Vali</a></td>
     <td>❌️</td>
     <td>✔️</td>
@@ -48,8 +49,7 @@ _last updated 2025-05-29_
 
 <table>
   </tr>
-    <th>Map name</th>
-    <th>Location count</th>
+    <th>Map link</th>
     <th>Notes</th>
     <th>Moving</th>
 	<th>No move</th>
@@ -58,24 +58,27 @@ _last updated 2025-05-29_
   </tr>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6838f47e394665c20c001f53>Moving only</a></td>
-    <td>4,186</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6838f47e394665c20c001f53><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838f47e394665c20c001f53&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=Moving&color=393273&labelColor=7950e5&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td>Moving games only</b></td>
     <td>✔️</td>
     <td>❌</td>
     <td>️❌</td>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6838e434ed10680ff0e42735>No move only</a></td>
-    <td>14,028</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6838e434ed10680ff0e42735><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e434ed10680ff0e42735&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=No%20Move&color=393273&labelColor=7950e5&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td>No Move games only</b></td>
     <td>❌</td>
     <td>✔️</td>
     <td>️❌</td>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6838e396013e44210abcbed5>NMPZ only</a></td>
-    <td>1,785</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6838e396013e44210abcbed5><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e396013e44210abcbed5&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=NMPZ&color=393273&labelColor=7950e5&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td>NMPZ games only</b></td>
     <td>❌</td>
     <td>❌</td>
@@ -88,40 +91,43 @@ _last updated 2025-05-29_
 <table>
 
   </tr>
-    <th>Map name</th>
-    <th>Location count</th>
+    <th>Map link</th>
     <th>Notes</th>
     <th>Moving</th>
 	<th>No move</th>
     <th>NMPZ</th>
   <tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6839122a2e76d9f2c26bbb10>Bronze + Silver</a></td>
-    <td>2,630</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6839122a2e76d9f2c26bbb10><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6839122a2e76d9f2c26bbb10&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=bronze%20%2B%20silver&color=555555&labelColor=efefef&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
 	<td>Bronze and Silver players only<br>Only includes <a href=https://www.geoguessr.com/maps/66014417ff2366aa9a7504df>The World</a> map</td>
     <td>✔️</td>
     <td>❌️</td>
     <td>❌️️</td>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6838e4528b10e17a36d0ef20>0-749 Rating</a></td>
-    <td>2,066</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6838e4528b10e17a36d0ef20><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e4528b10e17a36d0ef20&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=0-749%20Rating&color=655b33&labelColor=ffe681&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td>0 - 749 rating only</td>
     <td>✔️</td>
     <td>✔️️</td>
     <td>❌️️</td>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6838e45eed10680ff0e427c6>750-999 Rating</a></td>
-    <td>4,610</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6838e45eed10680ff0e427c6><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e45eed10680ff0e427c6&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=750-999%20Rating&color=3a0620&labelColor=d41875&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td>750 - 999 rating only</b></td>
     <td>❌️️</td>
     <td>✔️️</td>
     <td>✔️️</td>
   </tr>
   <tr>
-    <td><a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d>1000+ Rating</a></td>
-    <td>5,178</b></td>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e468774a76431e6f205d&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=1000%2B%20Rating&color=005181&labelColor=bfe4fb&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+	</td>
     <td>1,000+ rating only</b></td>
     <td>❌️️</td>
     <td>✔️️</td>
