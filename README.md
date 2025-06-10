@@ -108,27 +108,27 @@ _Click on a map name to play!_
   </tr>
   <tr>
 	<td>
-		<a href=https://www.geoguessr.com/maps/6838e4528b10e17a36d0ef20><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e4528b10e17a36d0ef20&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=0-749%20Rating&color=655b33&labelColor=ffe681&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+		<a href=https://www.geoguessr.com/maps/6838e4528b10e17a36d0ef20><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e4528b10e17a36d0ef20&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=0-799%20Rating&color=655b33&labelColor=ffe681&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
 	</td>
-    <td>0 - 749 rating only</td>
+    <td>0 - 799 rating only</td>
     <td>✔️</td>
     <td>✔️️</td>
     <td>❌️️</td>
   </tr>
   <tr>
 	<td>
-		<a href=https://www.geoguessr.com/maps/6838e45eed10680ff0e427c6><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e45eed10680ff0e427c6&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=750-999%20Rating&color=3a0620&labelColor=d41875&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+		<a href=https://www.geoguessr.com/maps/6838e45eed10680ff0e427c6><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e45eed10680ff0e427c6&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=800-1099%20Rating&color=3a0620&labelColor=d41875&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
 	</td>
-    <td>750 - 999 rating only</b></td>
+    <td>800 - 1099 rating only</b></td>
     <td>❌️️</td>
     <td>✔️️</td>
     <td>✔️️</td>
   </tr>
   <tr>
 	<td>
-		<a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e468774a76431e6f205d&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=1000%2B%20Rating&color=005181&labelColor=bfe4fb&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
+		<a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e468774a76431e6f205d&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=1100%2B%20Rating&color=005181&labelColor=bfe4fb&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
 	</td>
-    <td>1,000+ rating only</b></td>
+    <td>1100+ rating only</b></td>
     <td>❌️️</td>
     <td>✔️️</td>
     <td>✔️️</td>
