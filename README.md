@@ -125,6 +125,15 @@ _Click on a map name to play!_
     <td>✔️️</td>
   </tr>
   <tr>
+  <tr>
+	<td>
+		<a href=https://www.geoguessr.com/maps/6892e42f1f29ba5fd3370291><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6892e42f1f29ba5fd3370291&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=1000%2B%20Rating&color=005181&labelColor=bfe4fb&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F6892e42f1f29ba5fd3370291"></href>
+	</td>
+    <td>1000+ rating only (Moving)</b></td>
+    <td>✔️️</td>
+    <td>❌️️</td>
+    <td>❌️️</td>
+  </tr>
 	<td>
 		<a href=https://www.geoguessr.com/maps/6838e468774a76431e6f205d><img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.geoguessr.com%2Fapi%2Fmaps%2F6838e468774a76431e6f205d&query=%24.mapSize.coordinateCount&suffix=%20locs&style=for-the-badge&logoColor=bdb5ff&label=1100%2B%20Rating&color=005181&labelColor=bfe4fb&cacheSeconds=15&link=https%3A%2F%2Fwww.geoguessr.com%2Fmaps%2F683910148f1dc66a7582a5f5"></href>
 	</td>
