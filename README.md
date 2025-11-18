@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This project is being archived due to the introduction of Unranked Duels in GeoGuessr, as well as me having too much data collected already. As such, I'll be no longer updating the maps/script.
+
 # Ghost Duels
 
 Play a simulated Duels game aganist a random player's past guess inside single player!
